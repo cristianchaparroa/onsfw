@@ -4,7 +4,7 @@ WORKDIR /
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
-RUN python3 -m pip install --upgrade opennsfw2 
+RUN python3 -m pip install --upgrade opennsfw2 tensorrt 
 
 COPY . .
 
