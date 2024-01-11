@@ -13,7 +13,7 @@ def get_classifier():
     return Classifier()
 
 
-@app.post("/moderations")
+@app.post("/images/moderations")
 def moderations(
     file: List[UploadFile] = File(...), classifier: Classifier = Depends(get_classifier)
 ):
